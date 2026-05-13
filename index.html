@@ -75,9 +75,12 @@
       <div class="section-header">
         <div class="eyebrow">Signal Intelligence</div>
         <h2>Four signal dimensions.<br/><span class="gradient-text">One unified intelligence layer.</span></h2>
-        <p>Smart Signals captures, processes, and activates four distinct dimensions of user intelligence — giving advertisers a complete view of context, intent, attention, and journey.</p>
       </div>
-      <div class="signal-grid">
+      <div class="signals-body">
+        <!-- Left: empty — particle shape renders here via canvas -->
+        <div class="signals-left"></div>
+        <!-- Right: 2×2 square grid -->
+        <div class="signals-grid">
         <div class="signal-card signal-card--active" data-signal="intent">
           <div class="signal-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
           <div class="signal-body">
@@ -109,74 +112,6 @@
             <span>Track cross-channel user journeys across web, app, CTV, and DOOH — unifying touchpoints into a coherent story of the customer path.</span>
             <div class="signal-chips"><em>Cross-channel</em><em>Frequency</em><em>Attribution</em></div>
           </div>
-        </div>
-      </div>
-      <!-- Live preview panel -->
-      <div class="signal-preview" id="signalPreview">
-        <div class="preview-chrome">
-          <span></span><span></span><span></span>
-          <div class="preview-url">acunexus.com/signals/live</div>
-        </div>
-        <div class="preview-body" id="previewBody">
-          <!-- intent scene (default) -->
-          <div class="scene scene-intent active" id="scene-intent">
-            <div class="scene-article">
-              <div class="art-kicker"></div>
-              <div class="art-headline"></div>
-              <div class="art-line"></div>
-              <div class="art-line art-line--short"></div>
-              <div class="art-line"></div>
-            </div>
-            <div class="intent-card">
-              <div class="intent-card-label">Intent Detected</div>
-              <strong>High Purchase Intent</strong>
-              <div class="intent-bar"><div class="intent-fill"></div></div>
-              <div class="intent-meta"><span>Confidence: 94%</span><span>Segment: In-Market</span></div>
-            </div>
-            <div class="cursor-dot" id="cursorDot"></div>
-          </div>
-          <!-- context scene -->
-          <div class="scene scene-context" id="scene-context">
-            <div class="ctx-grid">
-              <div class="ctx-pill"><i>🏷</i> Finance — Investing</div>
-              <div class="ctx-pill"><i>😊</i> Sentiment: Positive</div>
-              <div class="ctx-pill ctx-pill--safe"><i>✅</i> Brand Safe</div>
-              <div class="ctx-pill"><i>🎯</i> Match Score: 97%</div>
-            </div>
-            <div class="ctx-ad">
-              <span>Ad matched to context</span>
-              <strong>Invest Smarter Today</strong>
-              <button>Learn More →</button>
-            </div>
-          </div>
-          <!-- attention scene -->
-          <div class="scene scene-attention" id="scene-attention">
-            <div class="att-heatmap">
-              <div class="heat-blob heat-1"></div>
-              <div class="heat-blob heat-2"></div>
-              <div class="heat-blob heat-3"></div>
-              <div class="att-overlay">
-                <div class="att-metric"><strong>4.8s</strong><span>Avg Attention</span></div>
-                <div class="att-metric"><strong>78%</strong><span>Viewability</span></div>
-              </div>
-            </div>
-          </div>
-          <!-- journey scene -->
-          <div class="scene scene-journey" id="scene-journey">
-            <div class="journey-path">
-              <div class="journey-node active"><i>🌐</i><span>Web</span></div>
-              <div class="journey-line"><div class="journey-progress"></div></div>
-              <div class="journey-node"><i>📱</i><span>App</span></div>
-              <div class="journey-line"><div class="journey-progress" style="animation-delay:.4s"></div></div>
-              <div class="journey-node"><i>📺</i><span>CTV</span></div>
-              <div class="journey-line"><div class="journey-progress" style="animation-delay:.8s"></div></div>
-              <div class="journey-node"><i>🏙</i><span>DOOH</span></div>
-            </div>
-            <div class="journey-output">
-              <span>Unified Journey Score</span>
-              <strong>Retargeting Triggered</strong>
-              <em class="journey-badge">Cross-Channel Match ✓</em>
-            </div>
           </div>
         </div>
       </div>

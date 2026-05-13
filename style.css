@@ -32,8 +32,8 @@ a{color:inherit;text-decoration:none}
 .mobile-menu .btn-primary{margin-top:12px;justify-content:center}
 .mobile-menu.open{display:flex}
 /* HERO */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
-.hero-canvas{position:absolute;inset:0;z-index:0}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center}
+.hero-canvas{position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none}
 .hero-glow{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
 .hero-glow-1{width:600px;height:600px;background:#7c3aed22;top:-100px;right:-100px}
 .hero-glow-2{width:500px;height:500px;background:#00d4ff15;bottom:-50px;left:-50px}
@@ -59,9 +59,11 @@ a{color:inherit;text-decoration:none}
 .section-header h2{font-size:clamp(28px,4vw,46px);font-weight:800;line-height:1.12;margin-bottom:16px}
 .section-header p{font-size:17px;color:var(--muted);max-width:640px;margin:0 auto}
 /* SIGNALS */
-.signals-section{background:linear-gradient(180deg,var(--bg),var(--bg2))}
-.signal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:48px}
-.signal-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;display:grid;grid-template-columns:44px 1fr;gap:16px;cursor:pointer;transition:all .2s}
+.signals-section{position:relative;z-index:1;background:transparent}
+.signals-body{display:grid;grid-template-columns:25% 75%;gap:0;align-items:stretch}
+.signals-left{min-height:400px} /* Empty anchor zone for the particle shape */
+.signals-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:16px;height:clamp(360px,50vh,540px)}
+.signal-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:12px;cursor:pointer;transition:all .2s;overflow:hidden}
 .signal-card:hover,.signal-card--active{border-color:var(--cyan);background:#0d1b2edd}
 .signal-card--active{box-shadow:0 0 0 1px var(--cyan),0 20px 40px #00d4ff15}
 .signal-icon{width:44px;height:44px;background:#0f2340;border:1px solid var(--border);border-radius:10px;display:grid;place-items:center;color:var(--cyan)}
