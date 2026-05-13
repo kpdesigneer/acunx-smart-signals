@@ -381,10 +381,37 @@ const observer = new IntersectionObserver(entries => {
 metricCards.forEach(c => observer.observe(c));
 
 // Contact form
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-  e.preventDefault();
-  const success = document.getElementById('formSuccess');
-  success.style.display = 'block';
-  this.reset();
-  setTimeout(() => success.style.display = 'none', 5000);
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const success = document.getElementById('formSuccess');
+    if (success) {
+      success.style.display = 'block';
+      this.reset();
+      setTimeout(() => success.style.display = 'none', 5000);
+    }
+  });
+}
+
+// Market Gap Tabs
+const gapBtns = document.querySelectorAll('.gap-btn');
+const gapCards = document.querySelectorAll('.gap-card');
+
+gapBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.gapBtn;
+    
+    // Update buttons
+    gapBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    
+    // Update cards
+    gapCards.forEach(card => {
+      card.classList.remove('active');
+      if (card.dataset.gap === target) {
+        card.classList.add('active');
+      }
+    });
+  });
 });
