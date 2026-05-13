@@ -84,20 +84,20 @@ function initParticles() {
   // Split into top flow and bottom flow to avoid text overlap
   waveLines = [
     // Top flow (above text, below nav buttons)
-    { amp: 30, freq: 0.002, speed: 0.015, offset: -270, color: '0, 212, 255', width: 2 },
-    { amp: 25, freq: 0.003, speed: 0.01, offset: -300, color: '124, 58, 237', width: 1.5 },
-    { amp: 35, freq: 0.0015, speed: 0.012, offset: -330, color: '0, 100, 255', width: 1.5 },
-    { amp: 20, freq: 0.0025, speed: 0.018, offset: -250, color: '0, 255, 200', width: 1 },
-    { amp: 40, freq: 0.001, speed: 0.008, offset: -310, color: '200, 100, 255', width: 2 },
-    { amp: 20, freq: 0.004, speed: 0.02, offset: -290, color: '100, 200, 255', width: 1 },
+    { amp: 60, freq: 0.003, speed: 0.015, offset: -270, color: '0, 212, 255', width: 2 },
+    { amp: 50, freq: 0.0045, speed: 0.01, offset: -300, color: '124, 58, 237', width: 1.5 },
+    { amp: 70, freq: 0.0022, speed: 0.012, offset: -330, color: '0, 100, 255', width: 1.5 },
+    { amp: 40, freq: 0.0035, speed: 0.018, offset: -250, color: '0, 255, 200', width: 1 },
+    { amp: 80, freq: 0.0015, speed: 0.008, offset: -310, color: '200, 100, 255', width: 2 },
+    { amp: 40, freq: 0.006, speed: 0.02, offset: -290, color: '100, 200, 255', width: 1 },
 
     // Bottom flow (below text)
-    { amp: 40, freq: 0.0025, speed: 0.018, offset: 300, color: '0, 255, 200', width: 2 },
-    { amp: 35, freq: 0.004, speed: 0.02, offset: 340, color: '200, 100, 255', width: 1.5 },
-    { amp: 50, freq: 0.001, speed: 0.008, offset: 380, color: '0, 212, 255', width: 1 },
-    { amp: 30, freq: 0.002, speed: 0.015, offset: 280, color: '124, 58, 237', width: 2 },
-    { amp: 45, freq: 0.0015, speed: 0.012, offset: 420, color: '0, 100, 255', width: 1.5 },
-    { amp: 25, freq: 0.003, speed: 0.01, offset: 360, color: '100, 200, 255', width: 1 }
+    { amp: 80, freq: 0.0035, speed: 0.018, offset: 300, color: '0, 255, 200', width: 2 },
+    { amp: 70, freq: 0.006, speed: 0.02, offset: 340, color: '200, 100, 255', width: 1.5 },
+    { amp: 100, freq: 0.0015, speed: 0.008, offset: 380, color: '0, 212, 255', width: 1 },
+    { amp: 60, freq: 0.003, speed: 0.015, offset: 280, color: '124, 58, 237', width: 2 },
+    { amp: 90, freq: 0.0022, speed: 0.012, offset: 420, color: '0, 100, 255', width: 1.5 },
+    { amp: 50, freq: 0.0045, speed: 0.01, offset: 360, color: '100, 200, 255', width: 1 }
   ];
 
   waveParticles = Array.from({ length: 6000 }, () => {
