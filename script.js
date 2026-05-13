@@ -37,7 +37,7 @@ window.addEventListener('mouseleave', () => {
 
 const activateBtn = document.querySelector('.hero-actions .btn-primary');
 if (activateBtn) {
-  activateBtn.addEventListener('mouseenter', () => targetSpeedMultiplier = 3.6);
+  activateBtn.addEventListener('mouseenter', () => targetSpeedMultiplier = 5.0);
   activateBtn.addEventListener('mouseleave', () => targetSpeedMultiplier = 1);
 }
 
