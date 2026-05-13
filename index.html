@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AcunX Smart Signals — Intelligent Ad Intelligence</title>
+  <meta name="description" content="AcunX Smart Signals powers the next generation of programmatic advertising with real-time contextual intelligence, intent detection, and AI-driven signal processing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="brand">Acun<span class="brand-x">X</span> <span class="brand-tag">Smart Signals</span></a>
+      <ul class="nav-links">
+        <li><a href="#signals">Signals</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#metrics">Metrics</a></li>
+        <li><a href="#formats">Formats</a></li>
+      </ul>
+      <a href="#contact" class="btn-primary nav-cta">Get Started</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#signals">Signals</a>
+      <a href="#how">How It Works</a>
+      <a href="#metrics">Metrics</a>
+      <a href="#formats">Formats</a>
+      <a href="#contact" class="btn-primary">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="container hero-inner">
+      <div class="eyebrow"><span class="dot-live"></span> Real-Time Signal Intelligence</div>
+      <h1 class="hero-title">
+        <span>Your programmatic</span>
+        <span class="gradient-text">deserves smarter signals.</span>
+      </h1>
+
+      <div class="hero-chips">
+        <span>Publishers</span><span>DSPs &amp; Buyers</span><span>Trading Desks</span><span>Ad Networks</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary btn-lg">Activate Signals</a>
+        <a href="#how" class="btn-ghost btn-lg">See How It Works</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>90%+</strong><span>Programmatic Fill Rate</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>~35%</strong><span>DOOH Programmatic Growth</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>$24B+</strong><span>Global Ad Market by 2028</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- SIGNAL TYPES -->
+  <section class="section signals-section" id="signals">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Signal Intelligence</div>
+        <h2>Four signal dimensions.<br/><span class="gradient-text">One unified intelligence layer.</span></h2>
+        <p>Smart Signals captures, processes, and activates four distinct dimensions of user intelligence — giving advertisers a complete view of context, intent, attention, and journey.</p>
+      </div>
+      <div class="signal-grid">
+        <div class="signal-card signal-card--active" data-signal="intent">
+          <div class="signal-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div class="signal-body">
+            <strong>Intent Signals</strong>
+            <span>Detect real-time purchase intent from scroll depth, search queries, dwell time, and click patterns — before the user even acts.</span>
+            <div class="signal-chips"><em>Scroll Depth</em><em>Dwell Time</em><em>Click Heat</em></div>
+          </div>
+        </div>
+        <div class="signal-card" data-signal="context">
+          <div class="signal-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/></svg></div>
+          <div class="signal-body">
+            <strong>Contextual Signals</strong>
+            <span>Understand the page environment — topic, sentiment, brand safety score — and serve ads that resonate with the surrounding content.</span>
+            <div class="signal-chips"><em>Page Sentiment</em><em>Topic Match</em><em>Brand Safety</em></div>
+          </div>
+        </div>
+        <div class="signal-card" data-signal="attention">
+          <div class="signal-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></svg></div>
+          <div class="signal-body">
+            <strong>Attention Signals</strong>
+            <span>Measure actual ad viewability, attention duration, and interaction quality — not just impressions served, but impressions noticed.</span>
+            <div class="signal-chips"><em>Viewability</em><em>Attention Time</em><em>Interaction Rate</em></div>
+          </div>
+        </div>
+        <div class="signal-card" data-signal="journey">
+          <div class="signal-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 12h18M3 12l4-4M3 12l4 4M21 12l-4-4M21 12l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="signal-body">
+            <strong>Journey Signals</strong>
+            <span>Track cross-channel user journeys across web, app, CTV, and DOOH — unifying touchpoints into a coherent story of the customer path.</span>
+            <div class="signal-chips"><em>Cross-channel</em><em>Frequency</em><em>Attribution</em></div>
+          </div>
+        </div>
+      </div>
+      <!-- Live preview panel -->
+      <div class="signal-preview" id="signalPreview">
+        <div class="preview-chrome">
+          <span></span><span></span><span></span>
+          <div class="preview-url">acunexus.com/signals/live</div>
+        </div>
+        <div class="preview-body" id="previewBody">
+          <!-- intent scene (default) -->
+          <div class="scene scene-intent active" id="scene-intent">
+            <div class="scene-article">
+              <div class="art-kicker"></div>
+              <div class="art-headline"></div>
+              <div class="art-line"></div>
+              <div class="art-line art-line--short"></div>
+              <div class="art-line"></div>
+            </div>
+            <div class="intent-card">
+              <div class="intent-card-label">Intent Detected</div>
+              <strong>High Purchase Intent</strong>
+              <div class="intent-bar"><div class="intent-fill"></div></div>
+              <div class="intent-meta"><span>Confidence: 94%</span><span>Segment: In-Market</span></div>
+            </div>
+            <div class="cursor-dot" id="cursorDot"></div>
+          </div>
+          <!-- context scene -->
+          <div class="scene scene-context" id="scene-context">
+            <div class="ctx-grid">
+              <div class="ctx-pill"><i>🏷</i> Finance — Investing</div>
+              <div class="ctx-pill"><i>😊</i> Sentiment: Positive</div>
+              <div class="ctx-pill ctx-pill--safe"><i>✅</i> Brand Safe</div>
+              <div class="ctx-pill"><i>🎯</i> Match Score: 97%</div>
+            </div>
+            <div class="ctx-ad">
+              <span>Ad matched to context</span>
+              <strong>Invest Smarter Today</strong>
+              <button>Learn More →</button>
+            </div>
+          </div>
+          <!-- attention scene -->
+          <div class="scene scene-attention" id="scene-attention">
+            <div class="att-heatmap">
+              <div class="heat-blob heat-1"></div>
+              <div class="heat-blob heat-2"></div>
+              <div class="heat-blob heat-3"></div>
+              <div class="att-overlay">
+                <div class="att-metric"><strong>4.8s</strong><span>Avg Attention</span></div>
+                <div class="att-metric"><strong>78%</strong><span>Viewability</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- journey scene -->
+          <div class="scene scene-journey" id="scene-journey">
+            <div class="journey-path">
+              <div class="journey-node active"><i>🌐</i><span>Web</span></div>
+              <div class="journey-line"><div class="journey-progress"></div></div>
+              <div class="journey-node"><i>📱</i><span>App</span></div>
+              <div class="journey-line"><div class="journey-progress" style="animation-delay:.4s"></div></div>
+              <div class="journey-node"><i>📺</i><span>CTV</span></div>
+              <div class="journey-line"><div class="journey-progress" style="animation-delay:.8s"></div></div>
+              <div class="journey-node"><i>🏙</i><span>DOOH</span></div>
+            </div>
+            <div class="journey-output">
+              <span>Unified Journey Score</span>
+              <strong>Retargeting Triggered</strong>
+              <em class="journey-badge">Cross-Channel Match ✓</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section how-section" id="how">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">The Process</div>
+        <h2>Signal to insight <span class="gradient-text">in milliseconds.</span></h2>
+        <p>A four-stage pipeline that turns raw behavioural data into precision advertising decisions at bid time.</p>
+      </div>
+      <div class="how-timeline">
+        <div class="how-spine"><div class="how-spine-fill" id="spineFill"></div></div>
+        <div class="how-steps">
+          <div class="how-step" data-step="0">
+            <div class="how-node"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="how-card">
+              <span class="how-num">01</span>
+              <h3>Data Ingestion</h3>
+              <p>Smart Signals ingests first-party, contextual, and behavioural signals from your properties at scale — no cookies required.</p>
+            </div>
+          </div>
+          <div class="how-step" data-step="1">
+            <div class="how-node"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <div class="how-card">
+              <span class="how-num">02</span>
+              <h3>AI Classification</h3>
+              <p>Our ML models classify intent, sentiment, and attention in real time — producing a rich signal profile for each user session.</p>
+            </div>
+          </div>
+          <div class="how-step" data-step="2">
+            <div class="how-node"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="2"/><circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="2"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98" stroke="currentColor" stroke-width="2"/></svg></div>
+            <div class="how-card">
+              <span class="how-num">03</span>
+              <h3>Bid-Time Activation</h3>
+              <p>Signal scores are delivered at bid time via our low-latency API — enabling DSPs and buyers to act on intent the moment it's detected.</p>
+            </div>
+          </div>
+          <div class="how-step" data-step="3">
+            <div class="how-node"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <div class="how-card">
+              <span class="how-num">04</span>
+              <h3>Measurement &amp; Loop</h3>
+              <p>Post-campaign signal analytics feed back into the model — continuously improving accuracy, reducing waste, and maximising ROI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS -->
+  <section class="section metrics-section" id="metrics">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Performance Data</div>
+        <h2>Numbers that <span class="gradient-text">move the needle.</span></h2>
+        <p>Signal-powered campaigns outperform standard programmatic across every KPI that matters.</p>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-gauge" style="--pct:87">
+            <svg viewBox="0 0 120 66"><path d="M10 60 A50 50 0 0 1 110 60" stroke="#1a2d45" stroke-width="10" fill="none" stroke-linecap="round"/><path class="gauge-fill" d="M10 60 A50 50 0 0 1 110 60" stroke="url(#g1)" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="157" stroke-dashoffset="0"/><defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient></defs></svg>
+            <div class="gauge-val">87%</div>
+          </div>
+          <strong class="metric-title">Intent Accuracy</strong>
+          <p class="metric-desc">AI-predicted purchase intent validated against conversion outcomes across 400M+ sessions.</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-gauge" style="--pct:72">
+            <svg viewBox="0 0 120 66"><path d="M10 60 A50 50 0 0 1 110 60" stroke="#1a2d45" stroke-width="10" fill="none" stroke-linecap="round"/><path class="gauge-fill" d="M10 60 A50 50 0 0 1 110 60" stroke="url(#g2)" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="157" stroke-dashoffset="0"/><defs><linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient></defs></svg>
+            <div class="gauge-val">3.2×</div>
+          </div>
+          <strong class="metric-title">CTR Lift</strong>
+          <p class="metric-desc">Average click-through rate improvement when signals are activated vs. standard audience targeting.</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-gauge" style="--pct:60">
+            <svg viewBox="0 0 120 66"><path d="M10 60 A50 50 0 0 1 110 60" stroke="#1a2d45" stroke-width="10" fill="none" stroke-linecap="round"/><path class="gauge-fill" d="M10 60 A50 50 0 0 1 110 60" stroke="url(#g3)" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="157" stroke-dashoffset="0"/><defs><linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient></defs></svg>
+            <div class="gauge-val">41%</div>
+          </div>
+          <strong class="metric-title">Waste Reduction</strong>
+          <p class="metric-desc">Reduction in wasted impressions by suppressing low-intent sessions before the bid is placed.</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-gauge" style="--pct:93">
+            <svg viewBox="0 0 120 66"><path d="M10 60 A50 50 0 0 1 110 60" stroke="#1a2d45" stroke-width="10" fill="none" stroke-linecap="round"/><path class="gauge-fill" d="M10 60 A50 50 0 0 1 110 60" stroke="url(#g4)" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="157" stroke-dashoffset="0"/><defs><linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient></defs></svg>
+            <div class="gauge-val">&lt;20ms</div>
+          </div>
+          <strong class="metric-title">Signal Latency</strong>
+          <p class="metric-desc">End-to-end signal processing and delivery latency — fast enough for real-time bidding at scale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AD FORMATS -->
+  <section class="section formats-section" id="formats">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Creative Formats</div>
+        <h2>Signal-activated <span class="gradient-text">creative formats.</span></h2>
+        <p>Every format in our library is engineered to respond to live signals — delivering the right creative at the exact moment of intent.</p>
+      </div>
+      <div class="formats-grid">
+        <div class="format-card">
+          <div class="format-preview fp-display">
+            <div class="fp-browser-bar"><span></span><span></span><span></span></div>
+            <div class="fp-content">
+              <div class="fp-lines"><div></div><div></div><div></div></div>
+              <div class="fp-ad-banner">
+                <span>AcunX Smart Ad</span>
+                <strong>Discover Now</strong>
+              </div>
+            </div>
+          </div>
+          <div class="format-info">
+            <h3>Dynamic Display</h3>
+            <p>Signal-responsive banners that update creative, copy, and CTA based on detected intent score in real time.</p>
+            <div class="format-tags"><em>Display</em><em>Intent-driven</em><em>DCO</em></div>
+          </div>
+        </div>
+        <div class="format-card">
+          <div class="format-preview fp-mobile">
+            <div class="fp-phone">
+              <div class="fp-phone-screen">
+                <div class="fp-story-bg"></div>
+                <div class="fp-story-content">
+                  <span>Sponsored</span>
+                  <strong>Your Next Move Starts Here</strong>
+                  <button>Swipe Up ↑</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="format-info">
+            <h3>Mobile Interstitial</h3>
+            <p>Full-screen mobile experiences delivered at peak attention moments — timed by dwell and scroll signals.</p>
+            <div class="format-tags"><em>Mobile</em><em>Attention-timed</em><em>Full-screen</em></div>
+          </div>
+        </div>
+        <div class="format-card">
+          <div class="format-preview fp-video">
+            <div class="fp-tv">
+              <div class="fp-tv-screen">
+                <div class="fp-video-mock"></div>
+                <div class="fp-lower-third">
+                  <strong>Brand Moment</strong>
+                  <span>Signal-activated CTV</span>
+                </div>
+                <div class="fp-skip">Skip Ad →</div>
+              </div>
+            </div>
+          </div>
+          <div class="format-info">
+            <h3>CTV &amp; Video</h3>
+            <p>Connected TV ads that fire based on journey signals — reaching users when they're most likely to engage on the big screen.</p>
+            <div class="format-tags"><em>CTV</em><em>Video</em><em>Journey-based</em></div>
+          </div>
+        </div>
+        <div class="format-card format-card--wide">
+          <div class="format-preview fp-dooh">
+            <div class="fp-billboard">
+              <div class="fp-bb-sky"></div>
+              <div class="fp-bb-screen">
+                <span>AcunX DOOH</span>
+                <strong>Contextually Activated OOH</strong>
+              </div>
+            </div>
+          </div>
+          <div class="format-info">
+            <h3>DOOH &amp; Programmatic OOH</h3>
+            <p>Outdoor screens activated by local contextual signals — weather, time-of-day, audience density, and proximity intelligence.</p>
+            <div class="format-tags"><em>DOOH</em><em>Contextual</em><em>Location-aware</em><em>Real-time</em></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="contact-glow"></div>
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-copy">
+          <div class="eyebrow">Get In Touch</div>
+          <h2>Ready to activate <span class="gradient-text">smarter signals?</span></h2>
+          <p>Whether you're a publisher, buyer, or trading desk — Smart Signals integrates in days, not months. Let's build something powerful together.</p>
+          <div class="contact-details">
+            <a href="mailto:innovation@acunexus.com">📧 innovation@acunexus.com</a>
+            <a href="tel:+919270225988">📞 +91 92702 25988</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field"><label for="name">Full Name</label><input id="name" type="text" placeholder="Vandan Desai" required /></div>
+          <div class="field"><label for="email">Work Email</label><input id="email" type="email" placeholder="hello@company.com" required /></div>
+          <div class="field"><label for="company">Company</label><input id="company" type="text" placeholder="Your Company" /></div>
+          <div class="field">
+            <label for="role">I am a…</label>
+            <div class="select-wrap">
+              <select id="role">
+                <option value="">Select your role</option>
+                <option>Publisher</option>
+                <option>DSP / Buyer</option>
+                <option>Trading Desk</option>
+                <option>Ad Network</option>
+                <option>Agency</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn-primary btn-submit">Activate Smart Signals <span>→</span></button>
+          <div class="form-success" id="formSuccess">Thanks! We'll be in touch within 24 hours. 🚀</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="brand footer-logo">Acun<span class="brand-x">X</span> <span class="brand-tag">Smart Signals</span></div>
+        <p>A programmatic intelligence product by AcunX — reimagining how media and creative solutions are crafted, delivered, and measured.</p>
+        <div class="footer-socials">
+          <a href="https://acunexus.com" target="_blank">acunexus.com ↗</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#signals">Signal Types</a>
+        <a href="#how">How It Works</a>
+        <a href="#metrics">Performance</a>
+        <a href="#formats">Ad Formats</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="https://acunexus.com/#about">About AcunX</a>
+        <a href="https://acunexus.com/careers.php">Careers</a>
+        <a href="https://acunexus.com/showcase.php">Showcase</a>
+        <a href="https://acunexus.com/privacy.php">Privacy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Offices</h4>
+        <span>🇮🇳 Platinum 9, Baner, Pune 411045</span>
+        <span>🇺🇸 30 N Gould St Ste R, Sheridan WY</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2025 AcunX. All rights reserved.</span>
+        <a href="https://acunexus.com/privacy.php">Privacy &amp; Compliance</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
